@@ -5,7 +5,7 @@ import pandas as pd
 import numpy as np
 from PIL import Image
 
-model = pickle.load(open("C:\\Users\\USER\OneDrive\Documents\MY DATA SCIENCE DOCS\PROJECT\model.pkl", 'rb'))
+model = pickle.load(open("model.pkl", 'rb'))
 
 st.title('OLA BIKE RIDE DEMAND')
 st.sidebar.header('MODEL FEATURE SELECTION')
