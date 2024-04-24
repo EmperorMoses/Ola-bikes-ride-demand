@@ -9,9 +9,9 @@ model = pickle.load(open("model.pkl", 'rb'))
 
 st.title('OLA BIKE RIDE DEMAND')
 st.sidebar.header('MODEL FEATURE SELECTION')
-bike_image = Image.open("C:\\Users\\USER\\OneDrive\\Documents\\MY DATA SCIENCE DOCS\\PROJECT\\s1-pro6405e906c37fe.webp")
+bike_image = Image.open("s1-pro6405e906c37fe.webp")
 st.image(bike_image)
-bike_image2 = Image.open("C:\\Users\\USER\\OneDrive\\Documents\\MY DATA SCIENCE DOCS\\PROJECT\\pexels-sofianunezph-19684606.jpg")
+bike_image2 = Image.open("pexels-sofianunezph-19684606.jpg")
 st.sidebar.image(bike_image2)
 
 def user_report():
@@ -98,6 +98,6 @@ st.subheader('Number of bikes demanded')
 st.markdown(f"<p style='color:red; font-weight:bold; font-size:25px;'>{np.round(count[0], 1)} bikes</p>", unsafe_allow_html=True)
 
 if st.sidebar.button("Show Samples of OLa Bikes"):
-    image_paths = ["C:\\Users\\USER\\OneDrive\\Documents\\MY DATA SCIENCE DOCS\\PROJECT\\s1-air64d5dd80d0382.webp", "C:\\Users\\USER\\OneDrive\\Documents\\MY DATA SCIENCE DOCS\\PROJECT\\s1-air64d5dd8377a1b.webp"]
+    image_paths = ["s1-air64d5dd80d0382.webp", "s1-air64d5dd8377a1b.webp"]
     for path in image_paths:
         st.sidebar.image(path, caption='Samples of Olabikes', use_column_width=True)
